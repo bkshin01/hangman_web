@@ -1,5 +1,6 @@
 FROM python:3.8-slim-buster
 LABEL Maintainer="musk82155@gmail.com"
+RUN pip install --upgrade pip
 WORKDIR /app
 COPY app.py ./
 RUN pip3 install -r requirements.txt
